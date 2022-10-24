@@ -1,0 +1,240 @@
+:root {
+--Cyan: hsl(179, 62%, 43%);
+--BrightYellow: hsl(71, 73%, 54%);
+--LightGray: hsl(204, 43%, 93%);
+--GrayishBlue: hsl(218, 22%, 67%);
+--font-family: 'Karla', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 400px;
+    background-color: var(--LightGray);
+    min-height: 100vh;
+    font-family: 'Karla', sans-serif;
+    padding: 1.5rem;
+    padding-right: 2rem;
+}
+
+/* First Card */
+
+.container {
+    
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 20px;
+    
+}
+
+.first-card {
+    padding: 25px;
+    border-top-left-radius: 16px;
+    font-style: n;
+}
+
+.first-card-title {
+    color: var(--Cyan);
+      
+    margin-top: 3px;
+    font-size: 1.3em;
+    font-weight: 700;
+    border-radius: 8px;
+    font-family: 'Karla', sans-serif;
+    text-decoration: none;
+}
+
+.first-card-subtitle {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 19px;
+    font-weight: bold;
+    
+    color: var(--BrightYellow);
+}
+
+.first-card-description {
+    color: var(--GrayishBlue);
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Second Card */
+
+.second-card {
+    /* border: 3px solid yellow; */
+    padding: 25px;
+    background-color: var(--Cyan);
+}
+
+.second-card-title {
+    font-size: 20px;
+    color: white;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+.price-permonth {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: var(--LightGray)
+    
+}
+
+.second-card-price {
+    font-size: 30px;
+    margin-right: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.second-card-permonth {
+    font-size: 15px;
+    color: var(--GrayishBlue);
+}
+
+.second-card-description {
+    color: var(--LightGray);
+}
+
+
+
+/* Button */
+
+.btn {
+    background-color: var(--BrightYellow);
+    color: white;
+    margin-top: 20px;
+    width: max-content;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;  
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color:hsla(71, 73%, 42%, 1);
+}
+
+
+/* Third Card */
+
+.third-card {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 25px;
+    background-color: #40BFBD;
+    height: 300px;
+    
+}
+
+.third-card-title {
+    font-size: 1.5em;
+    color: white;
+}
+
+.third-card-description {
+    color: var(--LightGray);
+    list-style: none;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+
+
+.attribution {
+    margin-top: 20px;
+    font-size: 10px;
+    text-align: center;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        align-items: center;
+        margin-left: 420px;       
+        width: 0%;  
+        
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        margin-left: 30px;
+        width: 650px;
+        margin-right: 150px;
+        -webkit-box-shadow: -2px 10px 27px 3px rgba(0,0,0,0.2);
+        -moz-box-shadow: -2px 10px 27px 3px rgba(0,0,0,0.2);
+        box-shadow: -2px 10px 27px 3px rgba(0,0,0,0.2);
+    }
+    
+
+
+    .first-card {
+        display: flex;
+        flex-direction: column;
+        padding-left: 40px;
+    }
+
+    .first-card-title {
+        margin-top: 18px;
+    }
+
+    .second-card {
+        width: 330px;
+        height: 320px;
+        border-bottom-left-radius: 8px;
+        padding-left: 40px;
+    }
+
+    .second-card-description {
+        font-size: 20px;
+    }
+
+    .second-card-permonth {
+        color: hsla(204, 43%, 93%, 0.79)
+    }
+
+    .third-card {
+        width: 320px;
+        height: 320px;
+        border-bottom-left-radius: 0px;
+        padding-left: 40px;
+    }
+
+    .container2 {
+        display: flex;
+    }
+
+    .btn {
+        -webkit-box-shadow: -2px 10px 27px 3px rgba(0,0,0,0.2);
+        -moz-box-shadow: -2px 10px 27px 3px rgba(0,0,0,0.2);
+        box-shadow: -2px 10px 27px 3px rgba(0,0,0,0.2);
+        margin-top: 30px;
+    }
+
+    .attribution {
+        margin-top: 900px;
+        margin-right: 900px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+
+
+    
+}
